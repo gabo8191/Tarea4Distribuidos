@@ -18,6 +18,7 @@
   "homepage": "https://github.com/gabo8191/Tarea4Distribuidos#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "server": "file:"
   }
 }

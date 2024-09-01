@@ -8,5 +8,15 @@
     "plate": "SKQ999",
     "last_arrival": "11:55",
     "counter": 7
+  },
+  "TYU456": {
+    "plate": "TYU456",
+    "last_arrival": "13:13",
+    "counter": 0
+  },
+  "QWE123": {
+    "plate": "QWE123",
+    "last_arrival": "11:53",
+    "counter": 0
   }
 }
