@@ -31,3 +31,14 @@ document.getElementById('searchBusForm').addEventListener('submit', function (ev
             errorMessageDiv.style.display = 'block';
         });
 });
+  // Validación en para el campo de letras
+  document.getElementById('plateLetters').addEventListener('input', function () {
+    const input = this.value;
+    this.value = input.replace(/[^A-Za-z]/g, ''); // Permitir solo letras
+  });
+  
+  // Validación para el campo de números
+  document.getElementById('plateNumbers').addEventListener('input', function () {
+    const input = this.value;
+    this.value = input.replace(/\D/g, ''); // Permitir solo números
+  });
