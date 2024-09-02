@@ -3,5 +3,10 @@
     "plate": "QWE123",
     "last_arrival": "11:53",
     "counter": 0
+  },
+  "ASD123": {
+    "plate": "ASD123",
+    "last_arrival": "05:34",
+    "counter": 1
   }
 }

@@ -15,7 +15,7 @@ document.getElementById('searchBusForm').addEventListener('submit', function (ev
   fetch(`http://localhost:3000/buses/${plate}`)
     .then(response => {
       if (!response.ok) {
-        throw new Error('Bus not found');
+        throw new Error('El bus no fue encontrado');
       }
       return response.json();
     })
@@ -48,14 +48,13 @@ document.getElementById('searchBusForm').addEventListener('submit', function (ev
       errorMessageDiv.style.display = 'block';
     });
 });
-  // Validación en para el campo de letras
-  document.getElementById('plateLetters').addEventListener('input', function () {
-    const input = this.value;
-    this.value = input.replace(/[^A-Za-z]/g, ''); // Permitir solo letras
-  });
-  
-  // Validación para el campo de números
-  document.getElementById('plateNumbers').addEventListener('input', function () {
-    const input = this.value;
-    this.value = input.replace(/\D/g, ''); // Permitir solo números
-  });
+
+document.getElementById('plateLetters').addEventListener('input', function () {
+  const input = this.value;
+  this.value = input.replace(/[^A-Za-z]/g, '');
+});
+
+document.getElementById('plateNumbers').addEventListener('input', function () {
+  const input = this.value;
+  this.value = input.replace(/\D/g, '');
+});

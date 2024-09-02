@@ -48,7 +48,7 @@ app.get('/buses/:plate', (req, res) => {
   if (bus) {
     res.json(bus);
   } else {
-    res.status(404).send('El bus no existe');
+    res.status(404).send('El bus no fue encontrado');
   }
 });
 
@@ -77,7 +77,7 @@ app.put('/buses/:plate', (req, res) => {
     writeBusData(buses);
     res.json(bus);
   } else {
-    res.status(404).send('El bus no existe');
+    res.status(404).send('El bus no fue encontrado');
   }
 });
 
@@ -88,6 +88,6 @@ app.delete('/buses/:plate', (req, res) => {
     writeBusData(buses);
     res.send('Bus eliminado');
   } else {
-    res.status(404).send('El bus no existe');
+    res.status(404).send('El bus no fue encontrado');
   }
 });
