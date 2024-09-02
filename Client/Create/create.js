@@ -48,14 +48,12 @@ document.getElementById('createBusForm').addEventListener('submit', function (ev
     });
 });
 
-  // Validación en para el campo de letras
-  document.getElementById('plateLetters').addEventListener('input', function () {
-    const input = this.value;
-    this.value = input.replace(/[^A-Za-z]/g, ''); // Permitir solo letras
-  });
-  
-  // Validación para el campo de números
-  document.getElementById('plateNumbers').addEventListener('input', function () {
-    const input = this.value;
-    this.value = input.replace(/\D/g, ''); // Permitir solo números
-  });
+document.getElementById('plateLetters').addEventListener('input', function () {
+  const input = this.value;
+  this.value = input.replace(/[^A-Za-z]/g, '');
+});
+
+document.getElementById('plateNumbers').addEventListener('input', function () {
+  const input = this.value;
+  this.value = input.replace(/\D/g, '');
+});
